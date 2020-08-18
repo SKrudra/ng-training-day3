@@ -1,0 +1,29 @@
+<h1>{{name}}</h1>
+
+
+
+Student <br>
+
+<p>{{students}}</p> <br>
+
+
+
+<!-- structural directive -->
+<div *ngIf="show">
+    <ul>
+        <li *ngFor="let student of students">
+            ID: {{student.id}} <br>
+            Name: {{student.name}} <br>
+        </li>
+    </ul>
+</div>
+
+
+
+
+<p>{{trainings}}</p>
+
+
+
+
+<button (click)="buttonClicked()">Emit Me</button>
